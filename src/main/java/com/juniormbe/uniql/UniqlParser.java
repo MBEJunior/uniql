@@ -13,6 +13,9 @@ import java.util.regex.Pattern;
  */
 public class UniqlParser {
 
+    /**
+     * Uniql model parts
+     */
     private static enum Part {
         NAME,
         FIELDS,
