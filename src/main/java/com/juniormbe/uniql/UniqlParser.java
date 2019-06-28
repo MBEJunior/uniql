@@ -24,6 +24,9 @@ public class UniqlParser {
         SORT
     }
 
+    /**
+     * Uniql field types
+     */
     private static enum FieldType {
         SIMPLE,
         UNIQL
