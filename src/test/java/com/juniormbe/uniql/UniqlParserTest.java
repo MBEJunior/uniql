@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Test;
 class UniqlParserTest {
     @Test
     @DisplayName("Uniql Object format as string should succed")
-    void UniqlObjectFormat_Should_Succed() {
+    void Uniql_ObjectFormat_Should_Succed() {
         Uniql uniql = Uniql.build("category")
           .addField("name")
           .addField("description")
@@ -47,7 +47,7 @@ class UniqlParserTest {
     }
     @Test
     @DisplayName("Uniql string model parsing to object should succed")
-    void UniqlParse_Should_Succed() {
+    void Uniql_Parse_Should_Succed() {
         assertDoesNotThrow(() -> {
             Uniql parsed = UniqlParser.parse("product{setName, description, category{setName, tag{setName}|search||}}");
             System.out.println(parsed.toFormattedModel());

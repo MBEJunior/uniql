@@ -29,3 +29,6 @@ HELP.md
 
 ### Log files ###
 logfile*
+
+### Build tools ###
+.gradle/
